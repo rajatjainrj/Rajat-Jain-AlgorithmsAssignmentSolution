@@ -2,6 +2,7 @@ package com.greatlearning.assignment.algorithms.service;
 
 import com.greatlearning.assignment.algorithms.utils.MergeSort;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -111,8 +112,9 @@ public class StockersPriceComparatorService {
     }
 
     private void displayCompanyStocksInOrder(boolean ascending) {
-        mergeSort.mergeSort(companyStockPrices, ascending);
-        printValues(companyStockPrices);
+        double[] sortedArray = Arrays.copyOf(companyStockPrices, companyStockPrices.length);
+        mergeSort.mergeSort(sortedArray, ascending);
+        printValues(sortedArray);
     }
 
     private void printValues(double[] companyStockPrices) {
