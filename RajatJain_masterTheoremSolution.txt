@@ -1,0 +1,16 @@
+Part 1 (Master Theorem)
+
+a)	T (n) = 3T (n/2) + n
+Solution - T(n) = Θ(n^(log 3 [base 2]))
+
+b)	T (n) = 64T (n/8) − n^2(log n)
+Solution – NA (f(n) is not positive)
+
+c)	T (n) = 2nT (n/2) + n^n
+Solution – NA (a is not constant)
+
+d)	T (n) = 3T (n/3) + n/2
+Solution - T(n) = Θ(n log n)
+
+e)	T (n) = 7T (n/3) + n^2
+Solution - T(n) = Θ(n^2)
